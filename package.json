@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "DevStart":"nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "loadash": "^1.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
