@@ -33,10 +33,18 @@ app.use(express.json());
 // app.use('/static', express.static(path.join(__dirname,'public')));
 
 
+// app.get('/', async (req, res) => {
+//     res.render('mundyo/index'); 
+// });
 app.get('/', async (req, res) => {
-    res.render('mundyo/index'); 
+    try {
+        // Your route logic here
+        res.render('mundyo/index');
+    } catch (error) {
+        console.error("Error in route:", error);
+        res.status(500).send("Internal Server Error"); // Send a 500 status for internal errors
+    }
 });
-
 
 
 app.listen(process.env.PORT || 3000);
