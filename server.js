@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const path= require('path');
 const morgan= require('morgan');
+const bodyParser = require("body-parser");
 
 
 
@@ -28,6 +29,7 @@ connectDB();
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(morgan("tiny"));
 app.use(express.json());
 // app.use('/static', express.static(path.join(__dirname,'public')));
