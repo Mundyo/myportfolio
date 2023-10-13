@@ -38,11 +38,11 @@ app.use(express.json());
 // });
 app.get('/', async (req, res) => {
     try {
-        // Your route logic here
+       
         res.render('mundyo/index');
     } catch (error) {
         console.error("Error in route:", error);
-        res.status(500).send("Internal Server Error"); // Send a 500 status for internal errors
+        res.status(500).send("Internal Server Error"); 
     }
 });
 
