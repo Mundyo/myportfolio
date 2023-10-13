@@ -26,8 +26,10 @@ const connectDB = async () => {
 connectDB();
 
 app.set("view engine", "ejs");
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(morgan("tiny"));
+app.use(express.json());
 // app.use('/static', express.static(path.join(__dirname,'public')));
 
 
@@ -35,8 +37,6 @@ app.get('/', async (req, res) => {
     res.render('index'); 
 });
 
-// app.listen(8000, () => {
-//     console.log('App is running on port 8000');
-// });
+
 
 app.listen(process.env.PORT || 8000);
