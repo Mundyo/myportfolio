@@ -34,7 +34,7 @@ app.use(express.json());
 
 
 app.get('/', async (req, res) => {
-    res.render('index'); 
+    res.render('mundyo/index'); 
 });
 
 
