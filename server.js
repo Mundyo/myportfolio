@@ -7,24 +7,24 @@ const bodyParser = require("body-parser");
 
 
 
-const MongoDB ='mongodb+srv://deoleyo:Kasongi2014@cluster0.heaqntp.mongodb.net/';
-console.log(MongoDB);
+// const MongoDB ='mongodb+srv://deoleyo:Kasongi2014@cluster0.heaqntp.mongodb.net/';
+// console.log(MongoDB);
 
- mongoose.set('strictQuery', true);
+//  mongoose.set('strictQuery', true);
 
 
-const connectDB = async () => {
-    try {
-        await mongoose.connect(MongoDB, {
-            useUnifiedTopology: true,
-        });
-        console.log("MongoDB is connected");
-    } catch (error) {
-        console.error("Error connecting to MongoDB:", error);
-    }
-}
+// const connectDB = async () => {
+//     try {
+//         await mongoose.connect(MongoDB, {
+//             useUnifiedTopology: true,
+//         });
+//         console.log("MongoDB is connected");
+//     } catch (error) {
+//         console.error("Error connecting to MongoDB:", error);
+//     }
+// }
 
-connectDB();
+// connectDB();
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
