@@ -354,6 +354,8 @@ body{
 .contact{
   max-width:100%;
   width:100%;
+  padding-left: 30px;
+  font-weight: bold;
 }
 .contact .col-md-12,
 .contact .col-sm-12{
