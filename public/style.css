@@ -114,7 +114,7 @@ width: 20px;
 
 
 
-
+/* 
 @media (max-width:1000px){
 .container {
   max-width: 900px;
@@ -230,7 +230,7 @@ font-size: 20px !important;
 }
 }
 
-
+ */
 
 @media (max-width:780px){
 .container {
@@ -364,4 +364,28 @@ font-weight: bold;
 .contact .col-sm-12{
 font-size: 15px !important;
 }
+.card-img-top{
+  background-color: transparent !important;
+}
+.about-mee{
+  background-color:transparent !important ;
+}
+
+}
+
+/* Add this CSS to make images 100% width on small screens */
+.image-container img {
+  width: 100% ;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .image-container img {
+    width: 100% !important; 
+   
+  }
+  #Pro {
+    margin-left: 70px !important; 
+  }
 }
